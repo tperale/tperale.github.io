@@ -1,0 +1,51 @@
+:root {
+  /* Colors */
+  --color-black: black;
+  --color-white: white;
+  --color-bg: #e8dbb3;
+  --color-border-light: #ccc;
+  --color-bg-subtle: #eee;
+  --color-text-muted: #555;
+  --color-blue: #406aaf;
+  --color-red: #ce2626;
+
+  /* Font families */
+  --font-body: "Velvelyne-Regular";
+  --font-body-light: "Velvelyne-Light";
+  --font-body-book: "Velvelyne-Book";
+  --font-body-bold: "Velvelyne-Bold";
+  --font-heading: "GeistPixel-Circle";
+  --font-ui: sans-serif;
+
+  /* Font sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.85rem;
+  --text-base: 0.9rem;
+  --text-2xl: 2rem;
+
+  /* Spacing */
+  --space-xs: 0.2rem;
+  --space-sm: 0.4rem;
+  --space-md: 0.5rem;
+  --space-lg: 1rem;
+  --space-xl: 2rem;
+
+  /* Border */
+  --border-width-sm: 1px;
+  --border-width-md: 2px;
+  --border-style: dashed;
+  --border-style-solid: solid;
+
+  /* Layout */
+  --container-max-width: 900px;
+  --card-image-max-width: 15rem;
+
+  /* Transition */
+  --transition-fast: 120ms ease;
+  --transition-normal: 0.3s ease-in-out;
+
+  /* Z-index */
+  --z-base: 0;
+  --z-behind: -1;
+  --z-behind-2: -2;
+}

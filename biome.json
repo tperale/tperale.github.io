@@ -1,10 +1,7 @@
 {
   "overrides": [
     {
-      "includes": [
-        "**/+data.ts",
-        "**/+data.js"
-      ],
+      "includes": ["**/+data.ts", "**/+data.js"],
       "linter": {
         "rules": {
           "correctness": {
@@ -30,6 +27,11 @@
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "formatter": {
     "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
   },
   "linter": {
     "enabled": true,

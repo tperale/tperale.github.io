@@ -1,0 +1,6 @@
+.navbar {
+  border-bottom: var(--border-width-sm) dashed var(--color-black);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  gap: var(--space-lg);
+}

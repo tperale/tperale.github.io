@@ -1,0 +1,6 @@
+.header {
+  border-bottom: var(--border-width-md) dashed var(--color-black);
+  padding: var(--space-lg);
+  font-size: var(--text-2xl);
+  font-weight: bold;
+}

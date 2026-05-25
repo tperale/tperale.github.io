@@ -1,0 +1,71 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 1rem);
+  flex-direction: column;
+  border-left: var(--border-width-sm) solid var(--color-border-light);
+  padding-left: var(--space-md);
+}
+
+.card-date {
+  font-size: var(--text-xs);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-lg);
+  text-transform: uppercase;
+}
+
+.card-image-wrapper {
+  background: var(--color-bg-subtle);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  max-width: var(--card-image-max-width);
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  font-size: var(--text-sm);
+  line-height: 1.4;
+}
+
+.card-author {
+  font-weight: bold;
+}
+
+.card-title {
+  margin: var(--space-xs) 0;
+}
+
+.card-subtitle,
+.card-description {
+  color: var(--color-text-muted);
+}
+
+.card-link {
+  position: relative;
+  display: inline-block;
+  color: var(--color-black);
+  text-decoration: none;
+  font-family: var(--font-body-normal);
+  margin: 0.5rem 0.2rem;
+  border-bottom: var(--border-width-sm) solid var(--color-white); /* To avoid resize glitch on hover */
+}
+
+.card-link:after {
+  content: " ⟶";
+}
+
+.card-link:hover {
+  border-bottom: var(--border-width-sm) dashed var(--color-blue);
+}
