@@ -109,6 +109,21 @@ h1 {
 
 blockquote p {
   font-family: var(--font-body-light);
+  border-left: var(--border-width-md) solid var(--color-text-muted);
+}
+
+p {
+  padding: 0 0.8rem;
+}
+
+h1 {
+  padding: 0 0.5rem;
+}
+
+img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;
 }
 
 .container {
