@@ -5,6 +5,7 @@ import { NavBar } from "../components/NavBar"
 import { Content } from "../components/Content"
 
 const LINKS = [
+  { label: "/", href: "/" },
   { label: "Hyperlinks", href: "/links" },
   { label: "About", href: "/abouts" },
 ]
