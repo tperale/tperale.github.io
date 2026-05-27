@@ -1,5 +1,6 @@
 import "./Header.css"
 import bannerSvg from "../assets/banner.svg"
+import { SvgMask } from "./SvgMask"
 
 interface HeaderProps {
   children: React.ReactNode
@@ -13,34 +14,15 @@ export function Header({
   imageColor = "AntiqueWhite",
 }: HeaderProps) {
   return (
-    <div
-      id="sidebar"
-      className="header"
-      style={{
-        position: "relative",
-        display: "flex",
-        height: 120,
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor,
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundColor: imageColor,
-          WebkitMaskImage: `url("${bannerSvg}")`,
-          maskImage: `url("${bannerSvg}")`,
-          WebkitMaskRepeat: "no-repeat",
-          maskRepeat: "no-repeat",
-          WebkitMaskPosition: "center",
-          maskPosition: "center",
-          WebkitMaskSize: "cover",
-          maskSize: "cover",
-        }}
-      />
-      <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
+    <div id="sidebar" className="header">
+      <SvgMask
+        svg={bannerSvg}
+        backgroundColor={backgroundColor}
+        imageColor={imageColor}
+        height={150}
+      >
+        {children}
+      </SvgMask>
     </div>
   )
 }

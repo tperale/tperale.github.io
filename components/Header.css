@@ -1,6 +1,6 @@
 .header {
   border-bottom: var(--border-width-md) solid var(--color-black);
-  padding: var(--space-lg);
+  padding: 0;
   font-size: var(--text-2xl);
   font-weight: bold;
 }
