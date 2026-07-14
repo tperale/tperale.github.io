@@ -1,6 +1,6 @@
 interface SvgMaskProps {
   svg: string
-  height: number 
+  height: number
   backgroundColor?: string
   imageColor?: string
   children?: React.ReactNode
