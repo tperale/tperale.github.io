@@ -8,10 +8,35 @@
 }
 
 .card {
-  flex: 0 0 calc(33.33% - 1rem);
+  flex: 0 0 calc(33.33% - var(--space-lg));
   flex-direction: column;
+  position: relative;
   border-left: var(--border-width-sm) solid var(--color-border-light);
   padding-left: var(--space-md);
+}
+
+.card-badge {
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  z-index: 1;
+  cursor: pointer;
+
+  .card-badge__hover {
+    opacity: 0;
+  }
+
+  .card-badge__no-hover {
+    opacity: 1;
+  }
+
+  &:hover .card-badge__no-hover {
+    opacity: 0;
+  }
+
+  &:hover .card-badge__hover {
+    opacity: 1;
+  }
 }
 
 .card-date {
@@ -45,6 +70,7 @@
 
 .card-title {
   margin: var(--space-xs) 0;
+  font-size: var(--text-xl);
 }
 
 .card-subtitle,
