@@ -15,10 +15,28 @@
   padding-left: var(--space-md);
 }
 
+@media (min-width: 2560px) {
+  .card {
+    flex: 0 0 calc(25% - var(--space-lg));
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 calc(50% - var(--space-lg));
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}
+
 .card-badge {
   position: absolute;
   top: var(--space-xs);
-  right: var(--space-xs);
+  right: var(--space-md);
   z-index: 1;
   cursor: pointer;
 
