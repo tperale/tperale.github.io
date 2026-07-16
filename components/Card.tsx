@@ -110,16 +110,26 @@ export function CardImg({ src, alt, children }: CardImgProps) {
 
 type CardProps = {
   children: React.ReactNode
+  span?: number
 }
 
-export function Card({ children }: CardProps) {
-  return <div className="card">{children}</div>
+export function Card({ children, span = 1 }: CardProps) {
+  return (
+    <div className="card" style={{ "--card-span": span }}>
+      {children}
+    </div>
+  )
 }
 
 type CardContainerProps = {
   children: React.ReactNode
+  columns?: number
 }
 
-export function CardContainer({ children }: CardContainerProps) {
-  return <div className="card-container">{children}</div>
+export function CardContainer({ children, columns = 3 }: CardContainerProps) {
+  return (
+    <div className="card-container" style={{ "--card-columns": columns }}>
+      {children}
+    </div>
+  )
 }

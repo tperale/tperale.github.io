@@ -8,29 +8,13 @@
 }
 
 .card {
-  flex: 0 0 calc(33.33% - var(--space-lg));
+  flex: 0 0
+    calc((100% / var(--card-columns)) * var(--card-span) - var(--space-lg));
+  min-width: var(--card-min-width, 12rem);
   flex-direction: column;
   position: relative;
   border-left: var(--border-width-sm) solid var(--color-border-light);
   padding-left: var(--space-md);
-}
-
-@media (min-width: 2560px) {
-  .card {
-    flex: 0 0 calc(25% - var(--space-lg));
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    flex: 0 0 calc(50% - var(--space-lg));
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    flex: 0 0 100%;
-  }
 }
 
 .card-badge {
