@@ -32,3 +32,17 @@ export function InlineLink({
     </a>
   )
 }
+
+export function CardAsLink({
+  href,
+  children,
+}: {
+  href: string
+  children: React.ReactNode
+}) {
+  return (
+    <a href={href} className="link card-as-link">
+      {children}
+    </a>
+  )
+}

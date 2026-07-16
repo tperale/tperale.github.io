@@ -53,3 +53,11 @@
 .inline-link:after {
   content: " ⧉";
 }
+
+.card-as-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: var(--space-xs) var(--space-sm);
+  margin: var(--space-xl);
+}
