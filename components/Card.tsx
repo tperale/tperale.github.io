@@ -1,7 +1,7 @@
 import "./Card.css"
 
 type CardContentProps = {
-  children: React.ReactNode[]
+  children: React.ReactNode
 }
 
 export function CardContent({ children }: CardContentProps) {
@@ -40,7 +40,7 @@ export function CardBadge({
 }
 
 type CardTitleProps = {
-  children: string | React.ReactNode
+  children: React.ReactNode
 }
 
 export function CardTitle({ children }: CardTitleProps) {
@@ -48,7 +48,7 @@ export function CardTitle({ children }: CardTitleProps) {
 }
 
 type CardSubtitleProps = {
-  children: string | React.ReactNode
+  children: React.ReactNode
 }
 
 export function CardSubtitle({ children }: CardSubtitleProps) {
@@ -56,7 +56,7 @@ export function CardSubtitle({ children }: CardSubtitleProps) {
 }
 
 type CardDescriptionProps = {
-  children: string | React.ReactNode
+  children: React.ReactNode
 }
 
 export function CardDescription({ children }: CardDescriptionProps) {
@@ -64,7 +64,7 @@ export function CardDescription({ children }: CardDescriptionProps) {
 }
 
 type CardAuthorProps = {
-  children: string | React.ReactNode
+  children: React.ReactNode
 }
 
 export function CardAuthor({ children }: CardAuthorProps) {
@@ -72,7 +72,7 @@ export function CardAuthor({ children }: CardAuthorProps) {
 }
 
 type CardDateProps = {
-  children: string | React.ReactNode
+  children: React.ReactNode
 }
 
 export function CardDate({ children }: CardDateProps) {
@@ -81,7 +81,7 @@ export function CardDate({ children }: CardDateProps) {
 
 type CardLinkProps = {
   href: string
-  children: string | React.ReactNode
+  children: React.ReactNode
 }
 
 export function CardLink({ href, children }: CardLinkProps) {
@@ -109,7 +109,7 @@ export function CardImg({ src, alt, children }: CardImgProps) {
 }
 
 type CardProps = {
-  children: React.ReactNode[]
+  children: React.ReactNode
 }
 
 export function Card({ children }: CardProps) {
@@ -117,7 +117,7 @@ export function Card({ children }: CardProps) {
 }
 
 type CardContainerProps = {
-  children: React.ReactNode[]
+  children: React.ReactNode
 }
 
 export function CardContainer({ children }: CardContainerProps) {
