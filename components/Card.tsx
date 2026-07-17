@@ -25,7 +25,6 @@ export function CardBadgeOnNoHover({ children }: CardBadgeProps) {
 
 export function CardBadge({
   children,
-  onHover,
   styleName,
   style,
 }: CardBadgeProps) {
@@ -60,7 +59,7 @@ type CardDescriptionProps = {
 }
 
 export function CardDescription({ children }: CardDescriptionProps) {
-  return <p className="card-description">{children}</p>
+  return <div className="card-description">{children}</div>
 }
 
 type CardAuthorProps = {
@@ -86,11 +85,11 @@ type CardLinkProps = {
 
 export function CardLink({ href, children }: CardLinkProps) {
   return (
-    <p>
+    <div>
       <a href={href} className="card-link">
         {children}
       </a>
-    </p>
+    </div>
   )
 }
 
