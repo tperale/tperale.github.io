@@ -96,12 +96,13 @@ export function CardLink({ href, children }: CardLinkProps) {
 type CardImgProps = {
   src?: string
   alt?: string
+  dotted?: boolean
   children?: React.ReactNode
 }
 
-export function CardImg({ src, alt, children }: CardImgProps) {
+export function CardImg({ src, alt, dotted, children }: CardImgProps) {
   return (
-    <div className="card-image-wrapper">
+    <div className={`card-image-wrapper ${dotted ? "card-image-dotted" : ""}`}>
       {src ? <img src={src} alt={alt} /> : children}
     </div>
   )
