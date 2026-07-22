@@ -15,7 +15,7 @@
   --font-body-book: "Velvelyne-Book";
   --font-body-bold: "Velvelyne-Bold";
   --font-heading: "GeistPixel-Circle";
-  --font-ui: sans-serif;
+  --font-ui: "Liberation Sans";
 
   /* Font sizes */
   --text-xs: 0.75rem;
