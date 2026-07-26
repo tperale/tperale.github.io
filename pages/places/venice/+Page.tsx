@@ -1,11 +1,7 @@
 import mapStyle from "../../../components/MapWithGallery/map-style.json"
 import { Divider } from "../../../components/Divider"
 import { Card, CardContainer } from "../../../components/Card"
-import {
-  CardImg,
-  CardTitle,
-  CardDescription,
-} from "../../../components/Card"
+import { CardImg, CardTitle, CardDescription } from "../../../components/Card"
 import { MapComponent, Point } from "../../../components/MapWithGallery"
 import { MapWithContextProvider } from "../../../providers/MapWithContext"
 
@@ -23,19 +19,19 @@ export function Header() {
       <Card span={2}>
         <CardTitle>Venice — Italy</CardTitle>
         <CardDescription>
-          Venice is an overwhelming crowded area. The city is an open air
-          museum and by just getting lost you will end up in really nice aeras.
-          <br/>
-          However, by just walking around you will notice that you often naturally
-          end up in the same big streets and might pass just next to some nice places.
-          <br/>
-          I have the chance to regularly visit the city. Everytime I go I discover
-          new places, visit new expos. This page is a good way to save some of those
-          addresses and make them easily browsable.
-          <br/>
-          This page contains, addresses I visited and liked or just passed by and told
-          myself 'this looks nice'. Also includes museum or fondation I visited and 
-          Biennale 2026 addresses.
+          Venice is an overwhelmingly crowded area. The city is an open-air
+          museum and by just getting lost you will end up in really nice areas.
+          <br />
+          However, by just walking around you will notice that you often
+          naturally end up in the same big streets and might pass just next to
+          some nice places.
+          <br />I have the chance to regularly visit the city. Every time I go I
+          discover new places, visit new expos. This page is a good way to save
+          some of those addresses and make them easily browsable.
+          <br />
+          This page contains addresses I visited and liked or just passed by and
+          told myself 'this looks nice'. It also includes museums or foundations
+          I visited and Biennale 2026 addresses.
         </CardDescription>
       </Card>
     </CardContainer>
@@ -46,19 +42,24 @@ export function Content() {
   return (
     <>
       <p>
-        There is a <a href="https://www.comune.venezia.it/it/content/tourist-tax-information-guests">tourist tax</a> that
-        now applies when you visit the city. It's really likely that you will get controlled if you get
-        to venice from the railway station aera. Check the period when the entrance fee applies and make sure
-        to pay it in advance. It gets more expensive the closer you book it.
+        There is a{" "}
+        <a href="https://www.comune.venezia.it/it/content/tourist-tax-information-guests">
+          tourist tax
+        </a>{" "}
+        that now applies when you visit the city. It's really likely that you
+        will be checked if you get to Venice from the railway station area.
+        Check the period when the entrance fee applies and make sure to pay it
+        in advance. It gets more expensive the closer you book it.
       </p>
       <p>
-        If you seat at a bar, watchout for the 'tourist' price. If you don't see
-        the price mentionned clearly on a bar you will pay a big markup the price.
+        If you sit at a bar, watch out for the 'tourist' price. If you don't see
+        the price mentioned clearly on a menu you will pay a big markup on the
+        price.
       </p>
       <p>
-        In Italian restaurant you pay for the 'coperto' (plates, cuttlery, etc
+        In Italian restaurants you pay for the 'coperto' (plates, cutlery, etc.
         ...). It's usually pretty low but it's a known tourist scam to bump the
-        copperto. Make sure to check it before sitting somewhere to avoid a
+        coperto. Make sure to check it before sitting somewhere to avoid a
         surprise.
       </p>
 
@@ -74,8 +75,8 @@ export function Content() {
               description="Olivetti showroom designed by Carlos Scarpa."
               tags={["museum", "Carlos Scarpa"]}
               href={{
-                "Maps": "https://maps.app.goo.gl/EHYXLXbpp44r47BS7",
-                "Website": "https://fondoambiente.it/luoghi/negozio-olivetti",
+                Maps: "https://maps.app.goo.gl/EHYXLXbpp44r47BS7",
+                Website: "https://fondoambiente.it/luoghi/negozio-olivetti",
               }}
             />
             <Point
@@ -93,8 +94,8 @@ export function Content() {
               description="Reservation needed."
               tags={["museum"]}
               href={{
-                "Maps": "https://maps.app.goo.gl/fG7UfwnFMeLWbomb8",
-                "Website": "https://fondazionedriesvannoten.org/en"
+                Maps: "https://maps.app.goo.gl/fG7UfwnFMeLWbomb8",
+                Website: "https://fondazionedriesvannoten.org/en",
               }}
             />
             <Point
@@ -104,18 +105,19 @@ export function Content() {
               description="Art collection."
               tags={["museum", "gallery"]}
               href={{
-                "Maps": "https://maps.app.goo.gl/GxnR1wudd4uTcSJ28",
-                "Website": "https://www.guggenheim-venice.it/it/",
+                Maps: "https://maps.app.goo.gl/GxnR1wudd4uTcSJ28",
+                Website: "https://www.guggenheim-venice.it/it/",
               }}
             />
             <Point
               title="Fondation Pinault — Punta Della Dogana"
               location={[12.3356434, 45.4309311]}
-              description="Regular big exposition. Renovated by Tadao Ando. An entrance here also give you the right to visit the Palazzo Grassi."
+              description="Regular big exposition. Renovated by Tadao Ando. An entrance here also gives you the right to visit the Palazzo Grassi."
               tags={["museum"]}
               href={{
-                "Maps": "https://maps.app.goo.gl/iKQwP4VU6NJFSc6f6",
-                "Website": "https://www.pinaultcollection.com/palazzograssi/en/programme?date=all&type=all&audience=all&section=pdd"
+                Maps: "https://maps.app.goo.gl/iKQwP4VU6NJFSc6f6",
+                Website:
+                  "https://www.pinaultcollection.com/palazzograssi/en/programme?date=all&type=all&audience=all&section=pdd",
               }}
             />
             <Point
@@ -124,25 +126,25 @@ export function Content() {
               description="Regular big exposition. Part of the Fondation Pinault."
               tags={["museum"]}
               href={{
-                "Maps": "https://maps.app.goo.gl/kWxGWWsy2y95Gppb7",
-                "Website": "https://www.pinaultcollection.com/palazzograssi/en"
+                Maps: "https://maps.app.goo.gl/kWxGWWsy2y95Gppb7",
+                Website: "https://www.pinaultcollection.com/palazzograssi/en",
               }}
             />
             <Point
               title="Le Stanze della Fotografia"
               location={[12.3454876, 45.4289756]}
-              description="Photography musuem on San Giorgio isle. You need to take the vaporetto to get there."
+              description="Photography museum on San Giorgio island. You need to take the vaporetto to get there."
               tags={["museum"]}
               href={{
-                "Maps": "https://maps.app.goo.gl/JqWCk5dgoRRSzryD9",
-                "Website": "https://lestanzedellafotografia.it/it/"
+                Maps: "https://maps.app.goo.gl/JqWCk5dgoRRSzryD9",
+                Website: "https://lestanzedellafotografia.it/it/",
               }}
             />
           </CardContainer>
-          <Divider>Food, Drink & Bacarretto</Divider>
+          <Divider>Food, Drink & Bacari</Divider>
           <p>
-            {"Bacarretto are the typical small bar in Venice. Here you can find finger food (cichetto), small cup of wine (ombra)." +
-              "You can also most of the time find sandwiches to go that you can keep in you backpack for later."}
+            {"Bacari are the typical small bars in Venice. Here you can find finger food (cicchetti), small glasses of wine (ombra). " +
+              "You can also most of the time find sandwiches to go that you can keep in your backpack for later."}
           </p>
           <CardContainer>
             <Point
@@ -150,7 +152,7 @@ export function Content() {
               subtitle="Fondamenta dei Tolentini, 183, 30100 Venezia VE, Italie"
               location={[12.3211937, 45.4374965]}
               color="FireBrick"
-              description="Probably one of the most known bacarretto. It's really famous and always crowded with a lot of queue. You can find extremely cheap food and drink. The place nearby is often animated during the evening."
+              description="Probably one of the most known bacari. It's really famous and always crowded with long queues. You can find extremely cheap food and drink. The area nearby is often animated during the evening."
               tags={["drink"]}
               href={"https://maps.app.goo.gl/kztL51bxeriww3UW8"}
             />
@@ -168,7 +170,7 @@ export function Content() {
               subtitle="Santa Croce Venezia 190/B, 30135 Venezia VE, Italie"
               location={[12.321622, 45.4377713]}
               color="FireBrick"
-              description="Pizzette, foccacia, tramezini, good pit stop to your lunch if you come from the ferrovia."
+              description="Pizzette, focaccia, tramezzini, good pit stop to your lunch if you come from the ferrovia."
               tags={["drink", "food"]}
               href="https://maps.app.goo.gl/R88YLJUXnbn5Ho7M7"
             />
@@ -222,7 +224,7 @@ export function Content() {
               subtitle="Fondamenta dei Ormesini, 2831, 30121 Venezia VE, Italie"
               location={[12.327297, 45.4458403]}
               color="FireBrick"
-              description="Wine bar, a bit on the pricy side but with high quality with eleveted bites availables."
+              description="Wine bar, a bit on the pricey side but with high quality elevated bites available."
               tags={["drink"]}
               href="https://maps.app.goo.gl/7eEXcjsCW6ogS7H38"
             />
@@ -287,6 +289,7 @@ export function Content() {
               title="Gelateria il Doge"
               subtitle="Sestiere Dorsoduro, 3058/A, 30123 Venezia VE, Italie"
               location={[12.3239612, 45.433811]}
+              description="It's a small chain, you can find multiple location exists with the same name."
               color="CornflowerBlue"
               tags={["gelato"]}
               href="https://maps.app.goo.gl/h4VS5nKF7R4hD4BX8"
@@ -326,7 +329,7 @@ export function Content() {
             />
             <Point
               title="La Certosa"
-              description="An island with almost nothing in it. Might find art pieces from the bienale. The remaining of the old monastry are still visible. Worth a walk to run away of the crowd of the city."
+              description="An island with almost nothing on it. You might find art pieces from the biennale. The remains of the old monastery are still visible. Worth a walk to escape the crowds of the city."
               location={[12.37076, 45.4324094]}
               tags={["To Visit"]}
             />
@@ -347,18 +350,19 @@ export function Content() {
               color="DarkSlateGray"
               tags={["Biennale 2026"]}
               href={{
-                "Ticket": "https://biglietteria.culturatela.it/dettaglio-spettacolo.php?negozio_spettacolo_id=187"
+                Ticket:
+                  "https://biglietteria.culturatela.it/dettaglio-spettacolo.php?negozio_spettacolo_id=187",
               }}
             />
             <Point
               title="Canicula"
               subtitle="complesso dell’ospedaletto"
-              description="Must-see free exhibition in an old hospital. Mutliple film shown. Take quite some time to see everything."
+              description="Must-see free exhibition in an old hospital. Multiple films shown. Takes quite some time to see everything."
               location={[12.3430083, 45.4391692]}
               color="DarkSlateGray"
               tags={["Biennale 2026"]}
               href={{
-                "Website": "https://inbetweenartfilm.com/en/canicula/"
+                Website: "https://inbetweenartfilm.com/en/canicula/",
               }}
             />
           </CardContainer>
