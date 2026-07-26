@@ -12,6 +12,17 @@ import {
 export default function Page() {
   return (
     <>
+      <CardAsLink href="/places">
+        <CardContainer columns={3}>
+          <Card span={3}>
+            <CardTitle>Places</CardTitle>
+            <CardDescription>
+              Place I visited, with location I want to save.
+            </CardDescription>
+            <CardLink href="/links">Visit</CardLink>
+          </Card>
+        </CardContainer>
+      </CardAsLink>
       <CardAsLink href="/links">
         <CardContainer columns={3}>
           <Card span={3}>

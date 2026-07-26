@@ -7,6 +7,7 @@ import { Content } from "../components/Content"
 
 const LINKS = [
   { label: "/", href: "/" },
+  { label: "Places", href: "/places" },
   { label: "Hyperlinks", href: "/links" },
   { label: "About", href: "/abouts" },
 ]
