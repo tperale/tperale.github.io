@@ -60,7 +60,10 @@
 }
 
 .card-image-dotted {
-  background-image: radial-gradient(var(--color-black) 0.8px, transparent 0.8px);
+  background-image: radial-gradient(
+    var(--color-black) 0.8px,
+    transparent 0.8px
+  );
   background-size: 7px 7px;
 }
 

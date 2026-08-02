@@ -80,8 +80,11 @@ export function Point(props: PointProps) {
       <CardContent>
         {description && <CardDescription>{description}</CardDescription>}
       </CardContent>
-      {typeof(href) === "string" && <CardLink href={href}>Maps</CardLink>}
-      {typeof(href) === "object" && Object.entries(href).map(([text, link]) => (<CardLink href={link}>{text}</CardLink>))}
+      {typeof href === "string" && <CardLink href={href}>Maps</CardLink>}
+      {typeof href === "object" &&
+        Object.entries(href).map(([text, link]) => (
+          <CardLink href={link}>{text}</CardLink>
+        ))}
     </Card>
   )
 }

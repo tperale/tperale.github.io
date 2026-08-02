@@ -30,7 +30,8 @@
 }
 
 .img-lightbox-mat {
-  border: var(--img-lightbox-border-size, 1.5rem) solid var(--img-lightbox-border-color, var(--color-white));
+  border: var(--img-lightbox-border-size, 1.5rem) solid
+    var(--img-lightbox-border-color, var(--color-white));
 }
 
 .img-lightbox-content img {
@@ -42,8 +43,8 @@
 
 .img-lightbox-close {
   position: absolute;
-  top: -3.0rem;
-  right: -3.0rem;
+  top: -3rem;
+  right: -3rem;
   color: var(--color-white);
   font-size: var(--text-2xl);
   line-height: 1;

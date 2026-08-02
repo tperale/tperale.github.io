@@ -5,9 +5,7 @@ import {
   CardDescription,
   CardLink,
 } from "../../components/Card"
-import {
-  CardAsLink
-} from "../../components/Link"
+import { CardAsLink } from "../../components/Link"
 
 export default function Page() {
   return (
