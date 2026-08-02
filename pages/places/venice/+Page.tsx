@@ -4,6 +4,7 @@ import { Card, CardContainer } from "../../../components/Card"
 import { CardImg, CardTitle, CardDescription } from "../../../components/Card"
 import { MapComponent, Point } from "../../../components/MapWithGallery"
 import { MapWithContextProvider } from "../../../providers/MapWithContext"
+import { InlineLink } from "../../../components/Link"
 
 import headerImage from "./assets/header.jpg"
 
@@ -368,6 +369,10 @@ export function Content() {
           </CardContainer>
         </div>
       </MapWithContextProvider>
+      <Divider>Other references</Divider>
+      <ul>
+        <li><InlineLink href="https://spacedelicious.com/pages/veneto">spacedelicious.com</InlineLink></li>
+      </ul>
     </>
   )
 }
