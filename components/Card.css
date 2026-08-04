@@ -10,7 +10,7 @@
 .card {
   flex: 0 0
     calc((100% / var(--card-columns)) * var(--card-span) - var(--space-lg));
-  min-width: var(--card-min-width, 12rem);
+  min-width: var(--card-min-width, 16rem);
   flex-direction: column;
   position: relative;
   border-left: var(--border-width-sm) solid var(--color-border-light);
