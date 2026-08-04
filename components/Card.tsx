@@ -23,11 +23,7 @@ export function CardBadgeOnNoHover({ children }: CardBadgeProps) {
   return <span className="card-badge__no-hover">{children}</span>
 }
 
-export function CardBadge({
-  children,
-  styleName,
-  style,
-}: CardBadgeProps) {
+export function CardBadge({ children, styleName, style }: CardBadgeProps) {
   return (
     <div
       className={["card-badge", styleName].filter(Boolean).join(" ")}
