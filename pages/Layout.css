@@ -1,14 +1,6 @@
 @import "./variables.css";
 
 @font-face {
-  font-family: "GapSans";
-  src: url("../assets/fonts/gapsans-webfont.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Velvelyne-Light";
   src: url("../assets/fonts/Velvelyne-Light.woff2") format("woff2");
   font-weight: 300;
