@@ -72,8 +72,8 @@ export function Content() {
             title="Negozio Olivetti"
             subtitle="P.za San Marco, 101, 30124 Venezia VE, Italie"
             location={[12.3374749, 45.4341923]}
-            description="Olivetti showroom designed by Carlos Scarpa."
-            tags={["museum", "Carlos Scarpa"]}
+            description="Olivetti showroom designed by Carlo Scarpa."
+            tags={["museum", "Carlo Scarpa"]}
             href={{
               Maps: "https://maps.app.goo.gl/EHYXLXbpp44r47BS7",
               Website: "https://fondoambiente.it/luoghi/negozio-olivetti",
