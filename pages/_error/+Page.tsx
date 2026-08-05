@@ -5,14 +5,14 @@ export default function Page() {
   if (is404) {
     return (
       <>
-        <h1>Page Not Found</h1>
+        <h1>PAGE NOT FOUND</h1>
         <p>This page could not be found.</p>
       </>
     )
   }
   return (
     <>
-      <h1>Internal Error</h1>
+      <h1>INTERNAL ERROR</h1>
       <p>Something went wrong.</p>
     </>
   )
