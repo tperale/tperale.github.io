@@ -1,8 +1,9 @@
-import mapStyle from "../../../components/MapWithGallery/map-style.json"
+import mapStyle from "../../../components/Map/map-style.json"
 import { Divider } from "../../../components/Divider"
+import { Title } from "../../../components/Title"
 import { Card, CardContainer } from "../../../components/Card"
 import { CardImg, CardTitle, CardDescription } from "../../../components/Card"
-import { MapComponent, Point } from "../../../components/MapWithGallery"
+import { MapComponent, Point } from "../../../components/Map"
 import { MapWithContextProvider } from "../../../providers/MapWithContext"
 import { InlineLink } from "../../../components/Link"
 
