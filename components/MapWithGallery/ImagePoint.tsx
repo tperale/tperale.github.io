@@ -160,3 +160,14 @@ export function ImagePoint(props: ImagePointProps) {
     </MapCard>
   )
 }
+
+type ImageWithDescPointProps = PointBaseData & ImagePointBaseData
+
+export function ImageWithDescPoint(props: ImageWithDescPointProps) {
+  return (
+    <MapCard point={props}>
+      <ImagePointContent {...props} />
+      <PointContent {...props} />
+    </MapCard>
+  )
+}
