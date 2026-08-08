@@ -17,7 +17,7 @@ import {
   CardSubtitle,
   CardAuthor,
 } from "../Card"
-import "./ImagePoint.css"
+import "./MapPoint.css"
 
 let idCounter = 0
 
