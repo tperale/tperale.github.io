@@ -122,9 +122,9 @@ type CardContainerProps = {
   columns?: number
 }
 
-export function CardContainer({ children, columns = 3 }: CardContainerProps) {
+export function CardContainer({ children, columns }: CardContainerProps) {
   return (
-    <div className="card-container" style={{ "--card-columns": columns }}>
+    <div className="card-container" style={columns !== undefined ? { "--card-columns": columns } : undefined}>
       {children}
     </div>
   )
