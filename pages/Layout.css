@@ -103,14 +103,3 @@ img {
     max-width: 1500px;
   }
 }
-
-body.container #page-content {
-  opacity: 0;
-}
-
-.footer {
-  border-top: var(--border-width-md) dashed var(--color-black);
-  padding: var(--space-lg);
-  text-align: center;
-  font-size: var(--text-base);
-}
