@@ -1,18 +1,19 @@
 import { usePageContext } from "vike-react/usePageContext"
+import { Title } from "../../components/Title"
 
 export default function Page() {
   const { is404 } = usePageContext()
   if (is404) {
     return (
       <>
-        <h1>PAGE NOT FOUND</h1>
+        <Title>Page Not Found</Title>
         <p>This page could not be found.</p>
       </>
     )
   }
   return (
     <>
-      <h1>INTERNAL ERROR</h1>
+      <Title>Internal Error</Title>
       <p>Something went wrong.</p>
     </>
   )
