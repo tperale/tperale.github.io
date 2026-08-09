@@ -12,8 +12,7 @@ import {
 } from "../../components/Card"
 import { CardAsLink } from "../../components/Link"
 
-import { Header as VeniceHeader } from "./venice/+Page"
-import { Header as FirminyHeader } from "./firminy/+Page"
+import { Header as VeniceHeader } from "./venice/Content"
 
 export default function Page() {
   return (
