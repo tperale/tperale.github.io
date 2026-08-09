@@ -38,7 +38,10 @@
   --border-style-solid: solid;
 
   /* Layout */
-  --container-max-width: 900px;
+  --container-max-width: 1100px;
+  @media (min-width: 2560px) {
+    --container-max-width: 1800px;
+  }
 
   /* Transition */
   --transition-fast: 120ms ease;

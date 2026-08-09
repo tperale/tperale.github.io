@@ -97,9 +97,3 @@ img {
   transition: opacity var(--transition-normal);
   opacity: 1;
 }
-
-@media (min-width: 2560px) {
-  .container {
-    max-width: 1500px;
-  }
-}
