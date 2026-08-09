@@ -64,7 +64,7 @@ export function Content() {
         coperto. Make sure to check it before sitting somewhere to avoid a
         surprise.
       </p>
-
+      <Title>Locations</Title>
       <MapWithContextProvider>
         <MapComponent style={mapStyle} center={MAP_CENTER} zoom={MAP_ZOOM} />
         <Divider>Museum / Fondazione</Divider>
@@ -368,7 +368,7 @@ export function Content() {
           />
         </CardContainer>
       </MapWithContextProvider>
-      <Divider>Other references</Divider>
+      <Title>Other References</Title>
       <ul>
         <li>
           <InlineLink href="https://spacedelicious.com/pages/veneto">
@@ -383,6 +383,7 @@ export function Content() {
 export default function Page() {
   return (
     <>
+      <Title>Venezia Locations and Bookmarks</Title>
       <Header />
       <Content />
     </>
