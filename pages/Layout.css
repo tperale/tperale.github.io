@@ -61,6 +61,7 @@ body {
 
 * {
   font-family: var(--font-body);
+  font-size: var(--text-base)
 }
 
 h1 {
