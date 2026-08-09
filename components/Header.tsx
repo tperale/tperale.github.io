@@ -3,7 +3,7 @@ import bannerSvg from "../assets/banner.svg"
 import { SvgMask } from "./SvgMask"
 
 interface HeaderProps {
-  children: React.ReactNode
+  children?: React.ReactNode
   backgroundColor?: string
   imageColor?: string
 }

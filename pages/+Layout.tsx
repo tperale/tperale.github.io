@@ -1,5 +1,4 @@
 import "./Layout.css"
-import { usePageContext } from "vike-react/usePageContext"
 
 import { Header } from "../components/Header"
 import { NavBar } from "../components/NavBar"
@@ -13,12 +12,9 @@ const LINKS = [
 ]
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const pageContext = usePageContext()
-  const { urlPathname } = pageContext
-
   return (
     <div className="container">
-      <Header>{`:/${urlPathname}`}</Header>
+      <Header />
       <NavBar items={LINKS} />
       <Content>{children}</Content>
     </div>
