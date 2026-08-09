@@ -34,8 +34,6 @@
   /* Border */
   --border-width-sm: 1px;
   --border-width-md: 2px;
-  --border-style: dashed;
-  --border-style-solid: solid;
 
   /* Layout */
   --container-max-width: 1100px;
