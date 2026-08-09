@@ -86,6 +86,10 @@ export function MapComponent({ style, center, zoom }: MapComponentProps) {
       if (selected.has(id)) {
         el.classList.add("selected")
         el.classList.remove("not-selected")
+        // If the child is already an existing node in the document
+        // the child is 'moved' to the end and not duplicated.
+        // https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+        el.parentElement?.appendChild(el)
       } else {
         el.classList.add("not-selected")
         el.classList.remove("selected")
