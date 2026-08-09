@@ -56,7 +56,6 @@
   background: var(--color-bg-subtle);
   padding: var(--space-lg);
   margin: var(--space-md);
-  max-width: var(--card-image-max-width);
 }
 
 .card-image-dotted {
