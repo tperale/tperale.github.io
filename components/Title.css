@@ -1,5 +1,5 @@
 .title {
-  margin: 0.8rem 0;
+  margin: var(--space-lg) 0;
 }
 
 .title-background {
@@ -19,6 +19,8 @@
 .title-content {
   background: var(--color-white);
   border: var(--border-width-md) solid var(--color-black);
-  margin: 0.8rem;
+  margin: var(--space-lg);
+  padding: 0 var(--space-md);
   font-family: var(--font-heading);
+  font-size: var(--text-2xl)
 }
