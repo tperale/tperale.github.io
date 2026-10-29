@@ -5,6 +5,7 @@
     "module": "ES2022",
     "moduleResolution": "Bundler",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "typeRoots": ["./node_modules/"],
     "types": ["vite/client", "vike-react"],
     "noEmit": true,
     "skipLibCheck": true,
