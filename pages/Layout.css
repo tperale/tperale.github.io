@@ -45,6 +45,11 @@
   font-size: var(--text-base)
 }
 
+::selection {
+  background: var(--color-highlight);
+  text-decoration: underline dotted;
+}
+
 body {
   margin: 0;
   background-color: var(--color-bg);
