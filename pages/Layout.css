@@ -40,9 +40,9 @@
   font-display: swap;
 }
 
-a {
-  text-decoration: none;
-  box-sizing: border-box;
+* {
+  font-family: var(--font-body);
+  font-size: var(--text-base)
 }
 
 body {
@@ -58,18 +58,18 @@ body {
   image-rendering: pixelated;
 }
 
-* {
-  font-family: var(--font-body);
-  font-size: var(--text-base)
+a {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 0 0.8rem;
 }
 
 blockquote p {
   font-family: var(--font-body-light);
   border-left: var(--border-width-md) solid var(--color-text-muted);
-}
-
-p {
-  padding: 0 0.8rem;
 }
 
 img {
