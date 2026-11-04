@@ -42,7 +42,7 @@
 
 * {
   font-family: var(--font-body);
-  font-size: var(--text-base)
+  font-size: var(--text-base);
 }
 
 ::selection {

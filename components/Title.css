@@ -22,5 +22,5 @@
   margin: var(--space-lg);
   padding: 0 var(--space-md);
   font-family: var(--font-heading);
-  font-size: var(--text-2xl)
+  font-size: var(--text-2xl);
 }
