@@ -12,14 +12,14 @@ import {
 } from "../../components/Card"
 import { CardAsLink } from "../../components/Link"
 
-import { Header as VeniceHeader } from "./venice/Content"
+import * as Venice from "./venice"
 
 export default function Page() {
   return (
     <>
       <Divider>Cool places & photos</Divider>
       <CardAsLink href="/places/venice">
-        <VeniceHeader />
+        <Venice.Header />
         <span style={{ position: "absolute", right: "1rem", bottom: "0.5rem" }}>
           <CardLink href="/places/venice">Visit</CardLink>
         </span>
