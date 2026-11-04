@@ -17,7 +17,7 @@ export default function Page() {
             <CardDescription>
               Place I visited, with location I want to save.
             </CardDescription>
-            <CardLink href="/links">Visit</CardLink>
+            <CardLink>Visit</CardLink>
           </Card>
         </CardContainer>
       </CardAsLink>
@@ -28,7 +28,7 @@ export default function Page() {
             <CardDescription>
               Links to things I liked, find useful, want to bookmark.
             </CardDescription>
-            <CardLink href="/links">Visit</CardLink>
+            <CardLink>Visit</CardLink>
           </Card>
         </CardContainer>
       </CardAsLink>
@@ -39,7 +39,7 @@ export default function Page() {
             <CardDescription>
               About this website. Font & open-source library used.
             </CardDescription>
-            <CardLink href="/abouts">Visit</CardLink>
+            <CardLink>Visit</CardLink>
           </Card>
         </CardContainer>
       </CardAsLink>
