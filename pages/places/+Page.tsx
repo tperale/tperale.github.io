@@ -1,15 +1,5 @@
-import img from "./firminy/drawing.svg"
 import { Divider } from "../../components/Divider"
-import {
-  CardContainer,
-  Card,
-  CardDate,
-  CardImg,
-  CardContent,
-  CardTitle,
-  CardSubtitle,
-  CardLink,
-} from "../../components/Card"
+import { CardLink } from "../../components/Card"
 import { CardAsLink } from "../../components/Link"
 import type { PlacePage } from "./types"
 
