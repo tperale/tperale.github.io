@@ -11,19 +11,26 @@ import {
   CardLink,
 } from "../../components/Card"
 import { CardAsLink } from "../../components/Link"
+import type { PlacePage } from "./types"
 
 import * as Venice from "./venice"
+
+function PlaceLink({ href, subpage }: { href: string; subpage: PlacePage }) {
+  return (
+    <CardAsLink href={href}>
+      <subpage.Header />
+      <span style={{ position: "absolute", right: "1rem", bottom: "0.5rem" }}>
+        <CardLink href={href}>Visit</CardLink>
+      </span>
+    </CardAsLink>
+  )
+}
 
 export default function Page() {
   return (
     <>
       <Divider>Cool places & photos</Divider>
-      <CardAsLink href="/places/venice">
-        <Venice.Header />
-        <span style={{ position: "absolute", right: "1rem", bottom: "0.5rem" }}>
-          <CardLink href="/places/venice">Visit</CardLink>
-        </span>
-      </CardAsLink>
+      <PlaceLink href="/places/venice" subpage={Venice} />
     </>
   )
 }
