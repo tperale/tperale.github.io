@@ -75,18 +75,28 @@ export function CardDate({ children }: CardDateProps) {
 }
 
 type CardLinkProps = {
-  href: string
+  href?: string
   children: React.ReactNode
 }
 
 export function CardLink({ href, children }: CardLinkProps) {
-  return (
-    <div>
-      <a href={href} className="card-link">
-        {children}
-      </a>
-    </div>
-  )
+  if (href) {
+    return (
+      <div>
+        <a href={href} className="card-link">
+          {children}
+        </a>
+      </div>
+    )
+  } else {
+    return (
+      <div>
+        <span className="card-link">
+          {children}
+        </span>
+      </div>
+    )
+  }
 }
 
 type CardImgProps = {
