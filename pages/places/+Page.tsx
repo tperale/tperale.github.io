@@ -20,7 +20,7 @@ function PlaceLink({ href, subpage }: { href: string; subpage: PlacePage }) {
     <CardAsLink href={href}>
       <subpage.Header />
       <span style={{ position: "absolute", right: "1rem", bottom: "0.5rem" }}>
-        <CardLink href={href}>Visit</CardLink>
+        <CardLink>Visit</CardLink>
       </span>
     </CardAsLink>
   )
