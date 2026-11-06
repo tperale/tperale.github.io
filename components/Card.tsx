@@ -91,9 +91,7 @@ export function CardLink({ href, children }: CardLinkProps) {
   } else {
     return (
       <div>
-        <span className="card-link">
-          {children}
-        </span>
+        <span className="card-link">{children}</span>
       </div>
     )
   }
@@ -134,7 +132,10 @@ type CardContainerProps = {
 
 export function CardContainer({ children, columns }: CardContainerProps) {
   return (
-    <div className="card-container" style={columns !== undefined ? { "--card-columns": columns } : undefined}>
+    <div
+      className="card-container"
+      style={columns !== undefined ? { "--card-columns": columns } : undefined}
+    >
       {children}
     </div>
   )
