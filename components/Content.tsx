@@ -3,7 +3,7 @@ import { Divider } from "./Divider"
 import { InlineLink } from "./Link"
 
 export function Content({ children }: { children: React.ReactNode }) {
-  return <div className="content">{children}</div>
+  return <main className="content">{children}</main>
 }
 
 export function MdxContent({
