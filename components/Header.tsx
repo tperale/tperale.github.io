@@ -14,7 +14,7 @@ export function Header({
   imageColor = "AntiqueWhite",
 }: HeaderProps) {
   return (
-    <div id="sidebar" className="header">
+    <header id="sidebar" className="header">
       <SvgMask
         svg={bannerSvg}
         backgroundColor={backgroundColor}
@@ -23,6 +23,6 @@ export function Header({
       >
         {children}
       </SvgMask>
-    </div>
+    </header>
   )
 }
