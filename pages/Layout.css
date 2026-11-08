@@ -83,7 +83,6 @@ img {
 }
 
 .container {
-  max-width: var(--container-max-width);
   margin: var(--space-xl) auto;
   background: var(--color-white);
   border: var(--border-width-md) solid var(--color-black);
