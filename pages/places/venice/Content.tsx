@@ -14,11 +14,9 @@ const MAP_ZOOM = 12
 
 export function Header() {
   return (
-    <CardContainer columns={3}>
+    <CardContainer>
+      <CardImg src={headerImage} dotted={true} />
       <Card>
-        <CardImg src={headerImage} dotted={true} />
-      </Card>
-      <Card span={2}>
         <CardTitle>Venice — Italy</CardTitle>
         <CardDescription>
           Venice is an overwhelmingly crowded area. The city is an open-air
