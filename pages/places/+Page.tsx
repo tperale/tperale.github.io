@@ -19,7 +19,6 @@ function PlaceLink({ href, subpage }: { href: string; subpage: PlacePage }) {
 export default function Page() {
   return (
     <>
-      <Divider>Cool places & photos</Divider>
       <PlaceLink href="/places/venice" subpage={Venice} />
     </>
   )
