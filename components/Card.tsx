@@ -128,14 +128,23 @@ export function Card({ children, span = 1 }: CardProps) {
 type CardContainerProps = {
   children: React.ReactNode
   columns?: number
+  padding?: string
 }
 
-export function CardContainer({ children, columns }: CardContainerProps) {
+export function CardContainer({
+  children,
+  columns,
+  padding = "0",
+}: CardContainerProps) {
+  const style = {
+    padding,
+  }
+  if (columns) {
+    style["--card_columns"] = columns
+  }
+
   return (
-    <div
-      className="card-container"
-      style={columns !== undefined ? { "--card-columns": columns } : undefined}
-    >
+    <div className="card-container" style={style}>
       {children}
     </div>
   )
