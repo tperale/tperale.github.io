@@ -85,8 +85,9 @@ img {
 .container {
   margin: var(--space-xl) auto;
   background: var(--color-white);
-  border: var(--border-width-md) solid var(--color-black);
-
+  border-width: var(--border-width-md) 0;
+  border-style: solid;
+  border-color: var(--color-black);
   display: flex;
   flex-direction: column;
   transition: opacity var(--transition-normal);
