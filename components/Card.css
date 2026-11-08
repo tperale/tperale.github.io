@@ -23,10 +23,6 @@
   padding: 0 var(--space-sm);
 }
 
-.card:nth-child(1) {
-  border-left: var(--border-width-sm) solid transparent;
-}
-
 .card-badge {
   position: absolute;
   top: var(--space-xs);
