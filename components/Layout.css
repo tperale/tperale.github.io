@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 992px) {
-  .layout-sticky-colum {
+  .layout-colum-sticky {
     position: relative;
     top: auto;
     height: 45vh;
