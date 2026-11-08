@@ -14,7 +14,6 @@ const LINKS = [
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="container">
-      <Header />
       <NavBar items={LINKS} />
       <Content>{children}</Content>
     </div>
