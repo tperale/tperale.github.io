@@ -4,6 +4,7 @@ import { CardAsLink } from "../../components/Link"
 import type { PlacePage } from "./types"
 
 import * as Venice from "./venice"
+import * as Scarpa from "./carlo-scarpa"
 
 function PlaceLink({ href, subpage }: { href: string; subpage: PlacePage }) {
   return (
@@ -20,6 +21,7 @@ export default function Page() {
   return (
     <>
       <PlaceLink href="/places/venice" subpage={Venice} />
+      <PlaceLink href="/places/carlo-scarpa" subpage={Scarpa} />
     </>
   )
 }
