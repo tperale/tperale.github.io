@@ -1,10 +1,18 @@
+import type { PropsWithChildren, CSSProperties } from "react"
+
 import "./Layout.css"
 
-export function Section({ children }) {
+type SectionProps = PropsWithChildren
+
+export function Section({ children }: SectionProps) {
   return <section className="layout-section">{children}</section>
 }
 
-export function StickyColumn({ children, style }) {
+type StickyColumnProps = PropsWithChildren<{
+  style?: CSSProperties
+}>
+
+export function StickyColumn({ children, style }: StickyColumnProps) {
   return (
     <div style={style} className="layout-colum layout-colum-sticky">
       <picture>{children}</picture>
@@ -12,6 +20,8 @@ export function StickyColumn({ children, style }) {
   )
 }
 
-export function Column({ children }) {
+type ColumnProps = PropsWithChildren
+
+export function Column({ children }: ColumnProps) {
   return <div className="layout-colum">{children}</div>
 }
