@@ -88,12 +88,16 @@ export function CardImg({ src, alt, dotted, children }: CardImgProps) {
 }
 
 type CardProps = PropsWithChildren<{
-  span?: number
+  span: number
 }>
 
 export function Card({ children, span = 1 }: CardProps) {
+  const style = {
+    "--card-span": span
+  }
+
   return (
-    <div className="card" style={{ "--card-span": span }}>
+    <div className="card" style={style}>
       {children}
     </div>
   )
@@ -111,9 +115,7 @@ export function CardContainer({
 }: CardContainerProps) {
   const style = {
     padding,
-  }
-  if (columns) {
-    style["--card_columns"] = columns
+    ...(columns ? { "--card-columns": columns } : {})
   }
 
   return (
