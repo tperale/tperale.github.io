@@ -1,19 +1,15 @@
 import "./Card.css"
+import type { PropsWithChildren, CSSProperties } from "react"
 
-type CardContentProps = {
-  children: React.ReactNode
-}
-
-export function CardContent({ children }: CardContentProps) {
+export function CardContent({ children }: PropsWithChildren) {
   return <div className="card-content">{children}</div>
 }
 
-type CardBadgeProps = {
-  children: React.ReactNode
+type CardBadgeProps = PropsWithChildren<{
   onHover?: React.ReactNode
   styleName?: string
-  style?: React.CSSProperties
-}
+  style?: CSSProperties
+}>
 
 export function CardBadgeOnHover({ children }: CardBadgeProps) {
   return <span className="card-badge__hover">{children}</span>
@@ -34,50 +30,29 @@ export function CardBadge({ children, styleName, style }: CardBadgeProps) {
   )
 }
 
-type CardTitleProps = {
-  children: React.ReactNode
-}
-
-export function CardTitle({ children }: CardTitleProps) {
+export function CardTitle({ children }: PropsWithChildren) {
   return <div className="card-title">{children}</div>
 }
 
-type CardSubtitleProps = {
-  children: React.ReactNode
-}
-
-export function CardSubtitle({ children }: CardSubtitleProps) {
+export function CardSubtitle({ children }: PropsWithChildren) {
   return <div className="card-subtitle">{children}</div>
 }
 
-type CardDescriptionProps = {
-  children: React.ReactNode
-}
-
-export function CardDescription({ children }: CardDescriptionProps) {
+export function CardDescription({ children }: PropsWithChildren) {
   return <div className="card-description">{children}</div>
 }
 
-type CardAuthorProps = {
-  children: React.ReactNode
-}
-
-export function CardAuthor({ children }: CardAuthorProps) {
+export function CardAuthor({ children }: PropsWithChildren) {
   return <div className="card-author">{children}</div>
 }
 
-type CardDateProps = {
-  children: React.ReactNode
-}
-
-export function CardDate({ children }: CardDateProps) {
+export function CardDate({ children }: PropsWithChildren) {
   return <div className="card-date">{children}</div>
 }
 
-type CardLinkProps = {
+type CardLinkProps = PropsWithChildren<{
   href?: string
-  children: React.ReactNode
-}
+}>
 
 export function CardLink({ href, children }: CardLinkProps) {
   if (href) {
@@ -112,10 +87,9 @@ export function CardImg({ src, alt, dotted, children }: CardImgProps) {
   )
 }
 
-type CardProps = {
-  children: React.ReactNode
+type CardProps = PropsWithChildren<{
   span?: number
-}
+}>
 
 export function Card({ children, span = 1 }: CardProps) {
   return (
@@ -125,11 +99,10 @@ export function Card({ children, span = 1 }: CardProps) {
   )
 }
 
-type CardContainerProps = {
-  children: React.ReactNode
+type CardContainerProps = PropsWithChildren<{
   columns?: number
   padding?: string
-}
+}>
 
 export function CardContainer({
   children,
